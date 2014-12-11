@@ -1,3 +1,5 @@
+// Step 1: Add data to students array
+
 var students = [
     //{fname: "Joe", lname: "Schmoe", grade: 55}
 ];
@@ -23,9 +25,6 @@ function addStudent() {
         grade: parseFloat(grade_field.val())
     }
     
-    // Add the physical rows to our table
-    addRow(student);
-    
     // Add student object into students array
     students.push(student);
     
@@ -35,19 +34,6 @@ function addStudent() {
     grade_field.val('');
     
     console.log(students);
-}
-
-function addRow(student) {
-    var tr = $('<tr>');
-    var td_name = $('<td>').html(student.fname + ' ' + student.lname);
-    var td_grade = $('<td>').html(student.grade);
-    
-    var button = $('<button>').addClass('btn btn-danger').html('X');
-    var td_button = $('<td>').append(button);
-    
-    tr.append(td_name).append(td_grade).append(td_button);
-    
-    $('#grades-table tbody').append(tr);
 }
 
 $(document).ready(init);

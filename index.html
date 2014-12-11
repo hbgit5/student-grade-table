@@ -12,40 +12,34 @@
 </head>
 
 <body>
-    <div class="col-md-2"></div>
+        <div class="col-md-2"></div>
     <div class="col-md-8">
-        <table id="grades-table" class="table table-striped">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Grade</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td>
-                        <div class="col-sm-6">
-                            <input type="text" class="form-control" id="fname" placeholder="First Name">
-                        </div>
-                        <div class="col-sm-6">
-                            <input type="text" class="form-control" id="lname" placeholder="Last Name">
-                        </div>
-                    </td>
-                    <td>
-                        <input type="text" class="form-control" id="grade" placeholder="Grade">
-                    </td>
-                    <td>
-                        <button id="btn-add-student" class="btn btn-success">+</button>
-                    </td>
-                </tr>
-            </tfoot>
-        </table>
+        <table class="table table-striped">
+        <tr>
+            <th>Name</th>
+            <th>Grade</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>Jack Jill</td>
+            <td>87</td>
+            <td><button class="btn btn-danger">X</button></td>
+        </tr>
+    
+        <tr>
+            <td>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="fname" placeholder="First Name">
+                </div>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="lname" placeholder="Last Name"></div>
+            </td>
+            <td><input type="text" class="form-control" id="grade" placeholder="Grade"></td>
+            <td><button id="btn-add-student" class="btn btn-success">+</button></td>
+        </tr>
+    </table>
     </div>
-
+    
     <div class="col-md-2"></div>
 
     <script src="main.js"></script>
