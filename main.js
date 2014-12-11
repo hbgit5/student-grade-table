@@ -1,3 +1,5 @@
+// Step 1: Add data to students array
+// Step 2: Add TR row to table
 var students = [
     //{fname: "Joe", lname: "Schmoe", grade: 55}
 ];
